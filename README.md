@@ -49,9 +49,20 @@ Many people don't know which services are available to them, where to find them,
 - The final commit is tagged `final-PoE`.
 
 **Screenshot of a passing workflow run:** 
+<img width="930" height="757" alt="Screenshot 2026-11-05 150542" src="https://github.com/user-attachments/assets/6225a5d2-9eb9-40a9-9586-d84ac8554188" />
+
 
 
 ## Screenshots
+<img width="1036" height="156" alt="Screenshot 2026-11-05 111155" src="https://github.com/user-attachments/assets/0363bcd6-374e-4d18-a5fa-258dc5070075" />
+<img width="942" height="338" alt="Screenshot 2026-11-05 090758" src="https://github.com/user-attachments/assets/5a3f8e7a-38dd-432a-a475-10ef9a75793a" />
+<img width="851" height="128" alt="Screenshot 2026-11-05 111316" src="https://github.com/user-attachments/assets/21d27691-70a4-4c69-9389-fede7c887110" />
+<img width="1065" height="384" alt="Screenshot 2026-11-05 111446" src="https://github.com/user-attachments/assets/96034fdf-ed9c-4584-8a94-bbdcee4b2da6" />
+
+
+
+
+
 
 [ADD SCREENSHOTS: login, register, home, settings, language change, offline request]
 
