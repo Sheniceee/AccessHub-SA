@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Profile &amp; Settings" android:textColor="#12355B" android:textSize="26sp" android:textStyle="bold"/>
+
+        <EditText android:id="@+id/etFirstName" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="20dp" android:hint="First Name"/>
+        <EditText android:id="@+id/etSurname" android:layout_width="match_parent" android:layout_height="55dp" android:hint="Surname"/>
+        <EditText android:id="@+id/etEmail" android:layout_width="match_parent" android:layout_height="55dp" android:hint="Email" android:enabled="false"/>
+        <EditText android:id="@+id/etPhone" android:layout_width="match_parent" android:layout_height="55dp" android:hint="Phone Number" android:inputType="phone"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" android:text="Preferred Language" android:textStyle="bold"/>
+        <Spinner android:id="@+id/spinnerLanguage" android:layout_width="match_parent" android:layout_height="55dp"/>
+        <Switch android:id="@+id/switchNotifications" android:layout_width="match_parent" android:layout_height="55dp" android:text="Enable Notifications"/>
+
+        <Button android:id="@+id/btnSaveSettings" android:layout_width="match_parent" android:layout_height="55dp" android:text="Save Settings"/>
+        <Button android:id="@+id/btnChangePassword" android:layout_width="match_parent" android:layout_height="55dp" android:text="Change Password"/>
+        <Button android:id="@+id/btnDeleteAccount" android:layout_width="match_parent" android:layout_height="55dp" android:text="Delete Account"/>
+    </LinearLayout>
+</ScrollView>
