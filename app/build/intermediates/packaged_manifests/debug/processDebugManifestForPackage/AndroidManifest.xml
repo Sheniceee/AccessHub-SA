@@ -9,8 +9,8 @@
         android:targetSdkVersion="36" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
@@ -25,18 +25,11 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:extractNativeLibs="false"
-        android:label="AccessHub SA"
+        android:icon="@android:drawable/sys_def_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@android:drawable/sys_def_app_icon"
         android:supportsRtl="true"
-        android:testOnly="true"
-        android:theme="@style/Theme.AccessHubSA"
-        android:usesCleartextTraffic="true" >
-        <activity android:name="com.example.accesshubsa.ui.settings.SettingsActivity" />
-        <activity android:name="com.example.accesshubsa.ui.requests.MyRequestsActivity" />
-        <activity android:name="com.example.accesshubsa.ui.request.RequestActivity" />
-        <activity android:name="com.example.accesshubsa.ui.services.ServicesActivity" />
-        <activity android:name="com.example.accesshubsa.ui.home.HomeActivity" />
-        <activity android:name="com.example.accesshubsa.ui.register.RegisterActivity" />
-        <activity android:name="com.example.accesshubsa.ui.login.LoginActivity" />
+        android:theme="@style/Theme.AccessHubSA" >
         <activity
             android:name="com.example.accesshubsa.MainActivity"
             android:exported="true" >

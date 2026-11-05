@@ -54,4 +54,8 @@ layout activity_settings
 layout item_request
 layout item_service
 string app_name
+string email
+string login
+string password
+string request_service
 style Theme.AccessHubSA

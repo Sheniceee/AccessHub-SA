@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:2:1-28:12
 MERGED from [androidx.databinding:viewbinding:8.5.2] C:\Users\Student\.gradle\caches\9.0-milestone-1\transforms\b8730eebb1cc2e37b7bc8af2c50f19c0\transformed\viewbinding-8.5.2\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Student\.gradle\caches\9.0-milestone-1\transforms\e4da827222ea6ec7e69314ab596296fe\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Student\.gradle\caches\9.0-milestone-1\transforms\9867e5003de2555780fe372e32b4a9fb\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -94,17 +94,25 @@ MERGED from [com.google.dagger:dagger-lint-aar:2.50] C:\Users\Student\.gradle\ca
 		INJECTED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:4:5-67
+ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:6:5-79
+MERGED from [androidx.work:work-runtime:2.9.0] C:\Users\Student\.gradle\caches\9.0-milestone-1\transforms\01d8fe457fee4f1a39cd87cb4f94a5f0\transformed\work-runtime-2.9.0\AndroidManifest.xml:24:5-79
+MERGED from [androidx.work:work-runtime:2.9.0] C:\Users\Student\.gradle\caches\9.0-milestone-1\transforms\01d8fe457fee4f1a39cd87cb4f94a5f0\transformed\work-runtime-2.9.0\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:6:5-30:19
-INJECTED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:6:5-30:19
+ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:8:5-26:19
+INJECTED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:8:5-26:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Student\.gradle\caches\9.0-milestone-1\transforms\e4da827222ea6ec7e69314ab596296fe\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Student\.gradle\caches\9.0-milestone-1\transforms\e4da827222ea6ec7e69314ab596296fe\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Student\.gradle\caches\9.0-milestone-1\transforms\9867e5003de2555780fe372e32b4a9fb\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -130,59 +138,35 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Student\.gradle\ca
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] C:\Users\Student\.gradle\caches\9.0-milestone-1\transforms\f9e4cb2cdb5479eba8f9b1195a2361c5\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:8:9-37
+		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:12:9-63
+	tools:targetApi
+		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:15:9-29
+	android:icon
+		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:10:9-58
 	android:allowBackup
-		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:7:9-35
+		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:10:9-49
-	android:usesCleartextTraffic
-		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:11:9-44
-activity#com.example.accesshubsa.ui.settings.SettingsActivity
-ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:13:9-66
-	android:name
-		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:13:19-63
-activity#com.example.accesshubsa.ui.requests.MyRequestsActivity
-ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:14:9-68
-	android:name
-		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:14:19-65
-activity#com.example.accesshubsa.ui.request.RequestActivity
-ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:15:9-64
-	android:name
-		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:15:19-61
-activity#com.example.accesshubsa.ui.services.ServicesActivity
-ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:16:9-66
-	android:name
-		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:16:19-63
-activity#com.example.accesshubsa.ui.home.HomeActivity
-ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:17:9-58
-	android:name
-		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:17:19-55
-activity#com.example.accesshubsa.ui.register.RegisterActivity
-ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:18:9-66
-	android:name
-		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:18:19-63
-activity#com.example.accesshubsa.ui.login.LoginActivity
-ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:19:9-60
-	android:name
-		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:19:19-57
+		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:14:9-49
 activity#com.example.accesshubsa.MainActivity
-ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:21:9-28:20
+ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:17:9-24:20
 	android:exported
-		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:23:13-36
+		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:19:13-36
 	android:name
-		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:22:13-41
+		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:18:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:24:13-27:29
+ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:20:13-23:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:26:17-77
+ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:22:27-74
 uses-sdk
 INJECTED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml
@@ -391,10 +375,6 @@ uses-permission#android.permission.WAKE_LOCK
 ADDED from [androidx.work:work-runtime:2.9.0] C:\Users\Student\.gradle\caches\9.0-milestone-1\transforms\01d8fe457fee4f1a39cd87cb4f94a5f0\transformed\work-runtime-2.9.0\AndroidManifest.xml:23:5-68
 	android:name
 		ADDED from [androidx.work:work-runtime:2.9.0] C:\Users\Student\.gradle\caches\9.0-milestone-1\transforms\01d8fe457fee4f1a39cd87cb4f94a5f0\transformed\work-runtime-2.9.0\AndroidManifest.xml:23:22-65
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [androidx.work:work-runtime:2.9.0] C:\Users\Student\.gradle\caches\9.0-milestone-1\transforms\01d8fe457fee4f1a39cd87cb4f94a5f0\transformed\work-runtime-2.9.0\AndroidManifest.xml:24:5-79
-	android:name
-		ADDED from [androidx.work:work-runtime:2.9.0] C:\Users\Student\.gradle\caches\9.0-milestone-1\transforms\01d8fe457fee4f1a39cd87cb4f94a5f0\transformed\work-runtime-2.9.0\AndroidManifest.xml:24:22-76
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
 ADDED from [androidx.work:work-runtime:2.9.0] C:\Users\Student\.gradle\caches\9.0-milestone-1\transforms\01d8fe457fee4f1a39cd87cb4f94a5f0\transformed\work-runtime-2.9.0\AndroidManifest.xml:25:5-81
 	android:name
