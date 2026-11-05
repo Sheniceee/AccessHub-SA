@@ -1,4 +1,4 @@
-name: Android CI
+﻿name: Android CI
 
 on:
   push:
@@ -24,10 +24,5 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
-            - name: Make gradlew executable
-        run: chmod +x ./gradlew
-
       - name: Build debug APK
         run: ./gradlew assembleDebug
-
-    
