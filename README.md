@@ -60,6 +60,8 @@ Many people don't know which services are available to them, where to find them,
 <img width="1065" height="384" alt="Screenshot 2026-11-05 111446" src="https://github.com/user-attachments/assets/96034fdf-ed9c-4584-8a94-bbdcee4b2da6" />
 <img width="1130" height="944" alt="Screenshot 2026-11-05 163535" src="https://github.com/user-attachments/assets/5af9807f-a0af-4861-a21f-f3f78296b16a" />
 <img width="1178" height="896" alt="Screenshot 2026-11-05 163600" src="https://github.com/user-attachments/assets/a023d102-d296-4b28-8b9d-68038a72b546" />
+<img width="1065" height="384" alt="Screenshot 2026-11-05 111446" src="https://github.com/user-attachments/assets/0943485c-1018-449a-9723-8ae43bb48b71" />
+
 
 
 
