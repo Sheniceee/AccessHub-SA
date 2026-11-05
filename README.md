@@ -11,14 +11,14 @@ Many people don't know which services are available to them, where to find them,
 ## Features
 
 - Register and log in (passwords are hashed, never stored as plain text)
-- Google Single Sign-On [CONFIRM]
+- Google Single Sign-On
 - Settings: update profile, change password, choose language, turn notifications on or off, delete account
-- Browse and search services by category [CONFIRM]
-- Create service requests and track their status [CONFIRM]
-- **Offline Request Queue (innovative feature):** requests made without internet are saved on the phone with the status *Pending Sync* and uploaded automatically when the connection returns [CONFIRM]
-- Push notifications for request updates (Firebase Cloud Messaging) [CONFIRM]
-- Languages: English, isiZulu and Sesotho [CONFIRM]
-- Points and achievements (gamification) [CONFIRM]
+- Browse and search services by category 
+- Create service requests and track their status 
+- **Offline Request Queue (innovative feature):** requests made without internet are saved on the phone with the status *Pending Sync* and uploaded automatically when the connection returns 
+- Push notifications for request updates (Firebase Cloud Messaging
+- Languages: English, isiZulu and Sesotho 
+- Points and achievements (gamification) 
 
 ## Design considerations
 
@@ -37,8 +37,8 @@ Many people don't know which services are available to them, where to find them,
 | Local storage / offline | Room, DataStore |
 | Background sync | WorkManager |
 | Dependency injection | Hilt |
-| Backend | REST API (ASP.NET Core) with a database [CONFIRM how yours is hosted] |
-| Notifications / SSO | Firebase Cloud Messaging, Google Sign-In [CONFIRM] |
+| Backend | REST API (ASP.NET Core) with a database [how yours is hosted] |
+| Notifications / SSO | Firebase Cloud Messaging, Google Sign-In  |
 | CI | GitHub Actions |
 
 ## How GitHub and GitHub Actions were used
@@ -48,7 +48,8 @@ Many people don't know which services are available to them, where to find them,
 - The workflow caught real problems before submission, including a missing Material Components theme library, a missing WorkManager dependency and a misplaced closing brace in `SettingsActivity.kt`. Each was fixed and the build now passes.
 - The final commit is tagged `final-PoE`.
 
-**Screenshot of a passing workflow run:** [ADD SCREENSHOT]
+**Screenshot of a passing workflow run:** 
+
 
 ## Screenshots
 
