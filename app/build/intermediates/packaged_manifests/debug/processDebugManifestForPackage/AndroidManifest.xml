@@ -27,6 +27,7 @@
         android:extractNativeLibs="false"
         android:label="AccessHub SA"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.AccessHubSA"
         android:usesCleartextTraffic="true" >
         <activity android:name="com.example.accesshubsa.ui.settings.SettingsActivity" />
