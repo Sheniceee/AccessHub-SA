@@ -1,0 +1,2 @@
+namespace AccessHub.Api.Models;
+public class User { public int Id{get;set;} public string FirstName{get;set;}=""; public string Surname{get;set;}=""; public string Email{get;set;}=""; public string PhoneNumber{get;set;}=""; public string PasswordHash{get;set;}=""; public string PreferredLanguage{get;set;}="English"; public bool NotificationEnabled{get;set;}=true; public int Points{get;set;}=0; public string? FcmToken{get;set;} public DateTime CreatedDate{get;set;}=DateTime.UtcNow; public ICollection<ServiceRequest> Requests{get;set;}=new List<ServiceRequest>(); }

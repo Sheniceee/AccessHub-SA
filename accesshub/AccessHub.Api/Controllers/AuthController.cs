@@ -1,0 +1,10 @@
+using AccessHub.Api.Data; using AccessHub.Api.DTOs; using AccessHub.Api.Models; using AccessHub.Api.Services; using Microsoft.AspNetCore.Identity; using Microsoft.AspNetCore.Mvc; using Microsoft.EntityFrameworkCore;
+namespace AccessHub.Api.Controllers;
+[ApiController][Route("api/auth")]
+public class AuthController(AccessHubDbContext db,TokenService tokens):ControllerBase
+{
+ private readonly PasswordHasher<User> hasher=new();
+ [HttpPost("register")] public async Task<IActionResult> Register(RegisterRequest r){if(new[]{r.FirstName,r.Surname,r.Email,r.PhoneNumber,r.Password}.Any(string.IsNullOrWhiteSpace))return BadRequest(new{message="All fields are required."});if(r.Password.Length<8)return BadRequest(new{message="Password must contain at least 8 characters."});var email=r.Email.Trim().ToLowerInvariant();if(await db.Users.AnyAsync(x=>x.Email==email))return Conflict(new{message="Email already exists."});var u=new User{FirstName=r.FirstName.Trim(),Surname=r.Surname.Trim(),Email=email,PhoneNumber=r.PhoneNumber.Trim()};u.PasswordHash=hasher.HashPassword(u,r.Password);db.Users.Add(u);await db.SaveChangesAsync();return Ok(new{message="Registration successful.",userId=u.Id});}
+ [HttpPost("login")] public async Task<IActionResult> Login(LoginRequest r){var u=await db.Users.FirstOrDefaultAsync(x=>x.Email==r.Email.Trim().ToLowerInvariant());if(u==null||hasher.VerifyHashedPassword(u,u.PasswordHash,r.Password)==PasswordVerificationResult.Failed)return Unauthorized(new{message="Invalid email or password."});return Ok(new{message="Login successful.",token=tokens.CreateToken(u),userId=u.Id,firstName=u.FirstName,surname=u.Surname,email=u.Email});}
+ [HttpPost("google")] public async Task<IActionResult> Google(GoogleLoginRequest r){var email=r.Email.Trim().ToLowerInvariant();var u=await db.Users.FirstOrDefaultAsync(x=>x.Email==email);if(u==null){u=new User{FirstName=r.FirstName,Surname=r.Surname,Email=email};db.Users.Add(u);}await db.SaveChangesAsync();return Ok(new{message="Google login successful.",token=tokens.CreateToken(u),userId=u.Id,firstName=u.FirstName,surname=u.Surname,email=u.Email});}
+}
