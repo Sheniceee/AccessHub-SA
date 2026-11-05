@@ -10,7 +10,7 @@ import com.example.accesshubsa.data.remote.RetrofitClient
 class RequestSyncWorker(appContext: Context, params: WorkerParameters) : CoroutineWorker(appContext, params) {
     override suspend fun doWork(): Result {
         val dao = AccessHubDatabase.getDatabase(applicationContext).requestDao()
-        val pending = dao.getPending()
+        val pending = dao.getUnsyncedRequests()
         if (pending.isEmpty()) return Result.success()
 
         return try {

@@ -13,6 +13,7 @@ import androidx.room.util.DBUtil;
 import androidx.sqlite.db.SupportSQLiteStatement;
 import java.lang.Class;
 import java.lang.Exception;
+import java.lang.Long;
 import java.lang.Object;
 import java.lang.Override;
 import java.lang.String;
@@ -34,6 +35,8 @@ public final class RequestDao_Impl implements RequestDao {
   private final EntityInsertionAdapter<ServiceRequest> __insertionAdapterOfServiceRequest;
 
   private final SharedSQLiteStatement __preparedStmtOfMarkAsSynced;
+
+  private final SharedSQLiteStatement __preparedStmtOfDeleteById;
 
   public RequestDao_Impl(@NonNull final RoomDatabase __db) {
     this.__db = __db;
@@ -64,19 +67,27 @@ public final class RequestDao_Impl implements RequestDao {
         return _query;
       }
     };
+    this.__preparedStmtOfDeleteById = new SharedSQLiteStatement(__db) {
+      @Override
+      @NonNull
+      public String createQuery() {
+        final String _query = "DELETE FROM service_requests WHERE id = ?";
+        return _query;
+      }
+    };
   }
 
   @Override
-  public Object insert(final ServiceRequest request, final Continuation<? super Unit> $completion) {
-    return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
+  public Object insert(final ServiceRequest request, final Continuation<? super Long> $completion) {
+    return CoroutinesRoom.execute(__db, true, new Callable<Long>() {
       @Override
       @NonNull
-      public Unit call() throws Exception {
+      public Long call() throws Exception {
         __db.beginTransaction();
         try {
-          __insertionAdapterOfServiceRequest.insert(request);
+          final Long _result = __insertionAdapterOfServiceRequest.insertAndReturnId(request);
           __db.setTransactionSuccessful();
-          return Unit.INSTANCE;
+          return _result;
         } finally {
           __db.endTransaction();
         }
@@ -129,7 +140,32 @@ public final class RequestDao_Impl implements RequestDao {
   }
 
   @Override
-  public Flow<List<ServiceRequest>> getAll() {
+  public Object deleteById(final long id, final Continuation<? super Unit> $completion) {
+    return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
+      @Override
+      @NonNull
+      public Unit call() throws Exception {
+        final SupportSQLiteStatement _stmt = __preparedStmtOfDeleteById.acquire();
+        int _argIndex = 1;
+        _stmt.bindLong(_argIndex, id);
+        try {
+          __db.beginTransaction();
+          try {
+            _stmt.executeUpdateDelete();
+            __db.setTransactionSuccessful();
+            return Unit.INSTANCE;
+          } finally {
+            __db.endTransaction();
+          }
+        } finally {
+          __preparedStmtOfDeleteById.release(_stmt);
+        }
+      }
+    }, $completion);
+  }
+
+  @Override
+  public Flow<List<ServiceRequest>> getAllRequests() {
     final String _sql = "SELECT * FROM service_requests ORDER BY id DESC";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     return CoroutinesRoom.createFlow(__db, false, new String[] {"service_requests"}, new Callable<List<ServiceRequest>>() {
@@ -178,7 +214,7 @@ public final class RequestDao_Impl implements RequestDao {
   }
 
   @Override
-  public Object getPending(final Continuation<? super List<ServiceRequest>> $completion) {
+  public Object getUnsyncedRequests(final Continuation<? super List<ServiceRequest>> $completion) {
     final String _sql = "SELECT * FROM service_requests WHERE synced = 0";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();

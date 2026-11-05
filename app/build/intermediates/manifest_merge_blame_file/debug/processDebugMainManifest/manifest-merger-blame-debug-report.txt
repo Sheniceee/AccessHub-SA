@@ -43,12 +43,12 @@
 25-->[androidx.core:core:1.13.0] C:\Users\Student\.gradle\caches\9.0-milestone-1\transforms\f9e4cb2cdb5479eba8f9b1195a2361c5\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 26        android:debuggable="true"
 27        android:extractNativeLibs="false"
-28        android:icon="@android:drawable/sys_def_app_icon"
-28-->C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:10:9-58
+28        android:icon="@mipmap/ic_launcher"
+28-->C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:10:9-43
 29        android:label="@string/app_name"
 29-->C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:11:9-41
-30        android:roundIcon="@android:drawable/sys_def_app_icon"
-30-->C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:12:9-63
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:12:9-54
 31        android:supportsRtl="true"
 31-->C:\Users\Student\Downloads\PART 2 OPEN SOURCE CODING\accesshub\AccessHubAndroid\app\src\main\AndroidManifest.xml:13:9-35
 32        android:theme="@style/Theme.AccessHubSA" >

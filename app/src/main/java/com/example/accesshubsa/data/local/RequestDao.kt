@@ -23,4 +23,7 @@ interface RequestDao {
 
     @Query("DELETE FROM service_requests WHERE id = :id")
     suspend fun deleteById(id: Long)
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertAll(requests: List<ServiceRequest>)
 }

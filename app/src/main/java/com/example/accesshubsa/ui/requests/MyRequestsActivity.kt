@@ -42,7 +42,7 @@ class MyRequestsActivity : AppCompatActivity() {
             } catch (_: Exception) { }
 
             AccessHubDatabase.getDatabase(applicationContext)
-                .requestDao().getAll().collect { adapter.update(it) }
+                .requestDao().getAllRequests().collect { adapter.update(it) }
         }
     }
 }
