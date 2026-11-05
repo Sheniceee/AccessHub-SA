@@ -61,6 +61,17 @@ Many people don't know which services are available to them, where to find them,
 
 The video was recorded on a real Android phone with a voice-over. It shows registration and login, SSO, settings, the REST API and database, offline mode with sync, push notifications and multi-language support.
 
+## Architecture
+AccessHub SA uses MVVM + Clean Architecture
+
+- UI Layer: Jetpack Compose Screens (Login, ServiceList, RequestForm)
+- ViewModel: Handles business logic + StateFlow
+- Data Layer: Repository pattern
+    - Local: Room Database (ServiceRequest entity) for offline queue
+    - Remote: Firebase Auth (Google SSO) + Firestore / API
+    - Sync: WorkManager SyncWorker (auto sync when online)
+- Services: FCM Push Notifications, SharedPreferences for language (en/zu/st)
+
 ## Release notes: version 1.0 (final PoE)
 
 Updates since the prototype:
