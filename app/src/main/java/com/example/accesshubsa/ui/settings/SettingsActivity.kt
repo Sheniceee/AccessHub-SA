@@ -75,7 +75,6 @@ class SettingsActivity : AppCompatActivity() {
             }
         }
     }
-}
 
     private fun showChangePasswordDialog() {
         val box = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL; setPadding(40, 10, 40, 0) }
@@ -111,3 +110,4 @@ class SettingsActivity : AppCompatActivity() {
                 }
             }.show()
     }
+}

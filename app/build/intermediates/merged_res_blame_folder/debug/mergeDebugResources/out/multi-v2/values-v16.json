@@ -1,16 +1,17 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.accesshubsa.app-mergeDebugResources-56:/values-v16/values-v16.xml",
+            "outputFile": "com.example.accesshubsa.app-mergeDebugResources-70:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Student\\.gradle\\caches\\9.0-milestone-1\\transforms\\3b773bd2d2f98dd2ec6f2ebb2d6897f4\\transformed\\core-1.12.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Student\\.gradle\\caches\\9.0-milestone-1\\transforms\\b4cf7d7aec9226d930f7429f23276349\\transformed\\appcompat-1.7.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
                     }
                 }
             ]
