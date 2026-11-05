@@ -10,7 +10,7 @@ Many people don't know which services are available to them, where to find them,
 
 ## Features
 
-- Register and log in (passwords are hashed, never stored as plain text)
+- Register and log in 
 - Google Single Sign-On
 - Settings: update profile, change password, choose language, turn notifications on or off, delete account
 - Browse and search services by category 
@@ -63,20 +63,6 @@ Many people don't know which services are available to them, where to find them,
 
 
 
-
-
-
-
-
-
-[ADD SCREENSHOTS: login, register, home, settings, language change, offline request]
-
-## Demo video
-
-[ADD YOUTUBE LINK HERE]
-
-The video was recorded on a real Android phone with a voice-over. It shows registration and login, SSO, settings, the REST API and database, offline mode with sync, push notifications and multi-language support.
-
 ## Architecture
 AccessHub SA uses MVVM + Clean Architecture
 
@@ -85,7 +71,7 @@ AccessHub SA uses MVVM + Clean Architecture
 - Data Layer: Repository pattern
     - Local: Room Database (ServiceRequest entity) for offline queue
     - Remote: Firebase Auth (Google SSO) + Firestore / API
-    - Sync: WorkManager SyncWorker (auto sync when online)
+    - Sync: WorkManager SyncWorker 
 - Services: FCM Push Notifications, SharedPreferences for language (en/zu/st)
 
 ## Release notes: version 1.0 (final PoE)
@@ -93,15 +79,15 @@ AccessHub SA uses MVVM + Clean Architecture
 Updates since the prototype:
 
 - Settings screen: edit profile, change password, delete account, choose language and notification preference
-- Offline request sync with Room and WorkManager [CONFIRM]
-- Google Single Sign-On [CONFIRM]
-- Push notifications [CONFIRM]
-- isiZulu and Sesotho language support [CONFIRM]
+- Offline request sync with Room and WorkManager 
+- Google Single Sign-On 
+- Push notifications 
+- isiZulu and Sesotho language support 
 - GitHub Actions workflow for automated build and tests
 - App icon and final image assets
 - Bug fixes: build configuration and dependency problems resolved
 
-**Innovative features added in this version:** the Offline Request Queue [CONFIRM], and points and achievements [CONFIRM].
+
 
 ## Building the project
 
@@ -112,5 +98,5 @@ Updates since the prototype:
 To run the tests and build from the command line: `./gradlew testDebugUnitTest assembleDebug`
 
 ## Author
-
-[YOUR NAME], [STUDENT NUMBER], OPSC
+Shenice Wood ST10447209, OPSC
+ST10458840 Maanda
