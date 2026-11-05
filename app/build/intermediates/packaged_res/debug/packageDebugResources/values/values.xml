@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accesshub_blue">#12355B</color>
+    <string name="app_name">AccessHub SA</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="request_service">Request Service</string>
+    <style name="Theme.AccessHubSA" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:statusBarColor">#12355B</item>
+    </style>
+</resources>

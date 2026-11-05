@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="16dp" android:layout_marginBottom="10dp">
+
+    <TextView android:id="@+id/tvServiceName" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Service Name" android:textColor="#12355B" android:textSize="18sp" android:textStyle="bold"/>
+    <TextView android:id="@+id/tvServiceCategory" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"/>
+    <TextView android:id="@+id/tvServiceDescription" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"/>
+    <Button android:id="@+id/btnViewService" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:text="Request Service"/>
+</LinearLayout>

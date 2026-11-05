@@ -1,0 +1,1 @@
+Open this folder directly in Android Studio. Android Studio can generate/download the Gradle wrapper for the configured AGP version.
